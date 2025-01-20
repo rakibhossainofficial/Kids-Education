@@ -8,3 +8,79 @@
     font-family: "Quicksand", serif;
 }
 
+body{
+    background-color: rgb(80, 80, 80);
+}
+
+/* ================ Reuseable Code ==========  */
+
+.orange-color{
+    color: #FEA301;
+}
+
+.skyblue-color{
+    color: #01acfd;
+}
+
+/* =========== Header ============= */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 140px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo h3{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 32px;
+}
+
+.navbar ul li{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#home{
+    color: #FEA301;
+}
+
+#about{
+    color: #01ACFD;
+}
+
+#facilities{
+    color: #05D4DF;
+}
+
+#admission{
+    color: #5D58EF;
+}
+
+header button{
+    padding: 10px 24px;
+    font-size: 20px;
+    background-color: #FEA301;
+    color: #ffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
