@@ -95,7 +95,7 @@ header button{
 main{
     margin: 0 auto;
     padding: 0 140px;
-    max-width: 1600px
+    max-width: 1600px;
 }
 
 /* ============= banner-section ============== */
@@ -117,5 +117,86 @@ main{
     font-size: 20px;
     color: rgb(17, 17, 17);
     margin-bottom: 24px;
+}
+
+/* ========== curriculum-section ============ */
+
+.curriculum-section{
+    padding: 60px 0;
+    text-align: center;
+
+}
+
+.curriculum-title{
+    font-size: 46px;
+    margin-bottom: 80px;
+}
+
+.Curriculum-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    /* text-align: center; */
+
+
+}
+
+.card{
+    border-radius: 18px;
+    padding: 40px 50px;
+    border: 0.94px solid rgb(222, 245, 255);
+}
+
+.card  h4{
+    font-size: 24px;
+    margin-bottom: 33px;
+}
+
+.card p{
+    font-size: 15px;
+    margin-bottom: 33px;
+    color: #808080;
+}
+
+.card button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.card-1{
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+
+.card-2{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.card-3{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.card-3 button{
+    color: rgb(135, 0, 255);
+}
+
+.arrow-icon{
+    margin: 80px 0 60px 0;
+    text-align: center;
+
+}
+
+.arrow-icon i{
+    padding: 17px ;
+    border-radius: 50px;
+    background-color: orange;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
 }
 
