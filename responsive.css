@@ -8,10 +8,8 @@
     }
 
     .header-section{
-        /* display: none; */
         padding: 12px 16px;
         border: 1px solid orange;
-
     }
     
     .banner-section{
@@ -25,6 +23,10 @@
 
     .banner-img img{
         width: 100%;
+    }
+
+    .title {
+        font-size: 40px;
     }
 
     main{
@@ -110,6 +112,10 @@
 
     .social-icon{
         margin-top: 30px;
+    }
+
+    marquee{
+        margin: 20px 20px;
     }
     
 }

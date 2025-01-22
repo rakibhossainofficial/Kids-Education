@@ -73,6 +73,20 @@ header{
     list-style-type: none;
     gap: 32px;
 }
+marquee{
+    background-color: #01ACFD;
+    color: #fff;
+    padding:15px 0;
+    font-size: 18px;
+    margin-block: 20px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+marquee span{
+    margin-right: 20px;
+    letter-spacing: 2px;
+}
 
 .navbar ul li{
     font-size: 20px;
@@ -171,7 +185,6 @@ main{
 }
 
 
-
 .card{
     border-radius: 18px;
     padding: 40px 50px;
@@ -181,7 +194,6 @@ main{
 
 .card:hover{
     transform: scale(1.02);
-    cursor: pointer;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
@@ -202,6 +214,10 @@ main{
     cursor: pointer;
     font-size: 15px;
     font-weight: 700;
+}
+
+.card button:hover{
+    text-decoration: underline;
 }
 
 .card-1{
