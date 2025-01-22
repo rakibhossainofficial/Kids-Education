@@ -1,0 +1,115 @@
+/* ============ Responsive ============= */
+
+@media (max-width: 576px) {
+    
+    header{
+       padding: 0 ;
+       margin: 0;
+    }
+
+    .header-section{
+        /* display: none; */
+        padding: 12px 16px;
+        border: 1px solid orange;
+
+    }
+    
+    .banner-section{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .banner-img img{
+        width: 100%;
+    }
+
+    main{
+        padding: 0 16px;
+        margin: 0;
+
+    }
+
+    .Curriculum-cards{
+        flex-direction: column;
+    }
+    
+    .story-container{
+        flex-direction: column;
+
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: start;
+        text-align: start;
+        padding: 0;
+    }
+
+    .navbar{
+        display: none;
+
+    }
+
+    .header-section button{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .right-boxes{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .arrow-icon i{
+        display: none;
+    }
+    .story-text{
+        padding: 20px 20px;
+    }
+
+    .story-text h5 {
+        padding: 6px 10px;
+        font-size: 12px;
+        position: absolute;
+        top: -13px;
+        left: 10px;
+    }
+
+    .story-box-1{
+        display: none;
+    }
+
+    footer{
+        padding: 20px;
+    }
+
+    .inline h2{
+        padding: 0 10px ;
+    }
+
+    .footer-logo p{
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer-logo{
+        width: 100%;
+    }
+
+    .social-icon{
+        margin-top: 30px;
+    }
+    
+}

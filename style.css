@@ -7,10 +7,6 @@
     font-family: "Quicksand", serif;
 }
 
-body{
-    /* background-color: rgb(80, 80, 80); */
-}
-
 /* ================ Reuseable Code ==========  */
 
 .orange-color{
@@ -30,14 +26,28 @@ body{
     border-radius: 12px;
     cursor: pointer;
     font-weight: 600;
+    transition: 0.3s;
 }
+
+.btn-primary:hover{
+    background-color: #01ACFD;
+    transform: scale(1.1);
+}
+
 
 /* =========== Header ============= */
 
-header{
+.header-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     padding: 20px 140px;
     margin: 0 auto;
     max-width: 1600px;
@@ -68,6 +78,11 @@ header{
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover{
+    transform: scale(1.12);
 }
 
 #home{
@@ -88,6 +103,22 @@ header{
 
 header button{
     background-color: #FEA301;
+    padding: 10px 60px;
+    font-size: 20px;
+    color: #ffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+header button:hover{
+    background-color: #01ACFD;
+    transform: scale(1.1);
+}
+
+.menu-icon{
+    display: none;
 }
 
 /* ============ Main ============== */
@@ -96,6 +127,7 @@ main{
     margin: 0 auto;
     padding: 0 140px;
     max-width: 1600px;
+    background-image: url(./assets/bg.png), linear-gradient(0deg, rgba(254, 161, 1, 0.397) 0%, rgba(255,255,255,1) 45%); 
 }
 
 /* ============= banner-section ============== */
@@ -122,9 +154,8 @@ main{
 /* ========== curriculum-section ============ */
 
 .curriculum-section{
-    padding: 60px 0;
+    margin-top: 60px;
     text-align: center;
-
 }
 
 .curriculum-title{
@@ -137,15 +168,21 @@ main{
     align-items: center;
     justify-content: space-between;
     gap: 28px;
-    /* text-align: center; */
-
-
 }
+
+
 
 .card{
     border-radius: 18px;
     padding: 40px 50px;
     border: 0.94px solid rgb(222, 245, 255);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .card  h4{
@@ -193,10 +230,180 @@ main{
 .arrow-icon i{
     padding: 17px ;
     border-radius: 50px;
-    background-color: orange;
+    background-color: #ffa500;
     color: #ffff;
     cursor: pointer;
     font-size: 24px;
     margin-right: 10px;
+    transition: 0.3s;
+}
+
+.arrow-icon i:hover{
+    background-color: #bd7801;
+}   
+
+/* ============ Story section =========== */
+
+ .storyes-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.storyes-section .title{
+    text-align: center;
+
+}
+
+.story-box{
+    border-radius: 16px;
+}
+
+.story-container{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.story-box img{
+    width: 100%;
+    border-radius: 16px 16px 0 0 ;
+    margin-bottom: 0;
+}
+
+.story-text{
+    padding: 34px;
+    position: relative;
+    background-color: #ffff;
+    border-radius: 0 0 16px 16px;
+    margin-top: -10px;
+}
+
+.story-box-1{
+    width: 50%;
+    background-color: #ffff;
+}
+
+.story-box-2{
+    width: 50%;
+}
+
+.story-text h5{
+    padding: 14px 20px;
+    background-color: #3CD8E8;
+    color: #ffff;
+    font-size: 15px;
+    display: inline;
+    border-radius: 47px;
+    position: absolute;
+    top: -25px;
+    margin-bottom: 33px;
+}
+
+.story-text-2 h5{
+    background-color: #95B226;
+}
+
+.story-text-3 h5{
+    background-color: #5D58EF;
+}
+
+.story-text-4 h5, .story-text-5 h5{
+    background-color: #95B226;
+}
+
+.story-box h4{
+    font-size: 24px;    
+    margin-bottom: 47px;
+    font-weight: 700;
+}
+
+
+.story-box p{
+    font-size: 15px;
+    color: #666666;
+}
+
+.right-boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+.right-boxes .story-text h4{
+    color: black;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.story-btn{
+    align-items: center;
+    width: max-content;
+    margin-top: 80px;
+}
+
+/* ============= footer ================= */
+
+footer{
+    padding: 140px;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #01ACFD;
+    color: #fff;
+}
+
+.footer-logo{
+    width: 30%;
+}
+
+.footer-logo span{
+    font-size: 42px;
+}
+
+.footer-logo p{
+    padding-left: 12px;
+}
+.footer-nav ul{
+    list-style: none;
+}
+
+.footer-nav ul li{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.inline{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.inline h2{
+    font-size: 42px;
+    padding: 0 20px ;
+}
+
+.inline img{
+    height: 100px;
+}
+
+.social-icon h3{
+    font-size: 26px;
+}
+.icons{
+    margin-top: 32px;
+}
+
+.icons img{
+    margin-right: 10px;
+    cursor: pointer;
 }
 
