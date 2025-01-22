@@ -356,6 +356,10 @@ main{
     font-size: 15px;
 }
 
+.display-none{
+    display: none;
+}
+
 .story-btn{
     align-items: center;
     width: max-content;
