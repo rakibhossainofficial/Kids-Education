@@ -397,6 +397,11 @@ footer{
 .footer-nav ul li{
     margin-top: 20px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-nav ul li:hover{
+    text-decoration: underline;
 }
 
 .inline{
